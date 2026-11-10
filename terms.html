@@ -1,0 +1,540 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Kullanım Şartları — Benim Matematiğim 5. Sınıf</title>
+<meta name="description" content="Benim Matematiğim 5. Sınıf kullanım şartları ve abonelik koşulları. Terms of service and subscription terms for Benim Matematiğim 5. Sınıf.">
+<style>
+  :root{
+    --board:#24473a;
+    --board-deep:#1b382d;
+    --board-frame:#8b5a2b;
+    --chalk:#f5f1e6;
+    --chalk-dim:#cfe0d4;
+    --yellow:#ffd54f;
+    --orange:#e76f51;
+    --blue:#4aa3e8;
+    --grass:#7ab648;
+    --lilac:#9575cd;
+    --paper:#fdf6e3;
+    --ink:#2b2b2b;
+    --maxw:860px;
+  }
+  *{margin:0;padding:0;box-sizing:border-box}
+  html{scroll-behavior:smooth;scroll-padding-top:96px}
+  body{
+    font-family:"Segoe UI",system-ui,-apple-system,Roboto,"Helvetica Neue",Arial,sans-serif;
+    background:
+      radial-gradient(1200px 500px at 85% -10%, rgba(74,163,232,.10), transparent 60%),
+      radial-gradient(900px 420px at -10% 30%, rgba(122,182,72,.08), transparent 55%),
+      radial-gradient(700px 500px at 110% 75%, rgba(149,117,205,.08), transparent 55%),
+      linear-gradient(160deg, var(--board) 0%, var(--board-deep) 100%);
+    background-attachment:fixed;
+    color:var(--chalk);
+    line-height:1.75;
+    min-height:100vh;
+  }
+  body::before{
+    content:"";position:fixed;inset:0;pointer-events:none;opacity:.05;
+    background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='140' height='140'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='2'/%3E%3C/filter%3E%3Crect width='140' height='140' filter='url(%23n)' opacity='0.6'/%3E%3C/svg%3E");
+  }
+  ::-webkit-scrollbar{width:12px}
+  ::-webkit-scrollbar-track{background:var(--board-deep)}
+  ::-webkit-scrollbar-thumb{background:var(--grass);border-radius:6px;border:3px solid var(--board-deep)}
+  ::-webkit-scrollbar-thumb:hover{background:var(--yellow)}
+
+  header.top{
+    position:sticky;top:0;z-index:50;
+    background:rgba(27,56,45,.92);backdrop-filter:blur(8px);
+    border-bottom:3px solid var(--board-frame);
+    box-shadow:0 4px 18px rgba(0,0,0,.35);
+  }
+  .top-inner{
+    max-width:var(--maxw);margin:0 auto;padding:14px 20px;
+    display:flex;align-items:center;gap:14px;flex-wrap:wrap;
+  }
+  .logo{display:flex;align-items:center;gap:10px;font-weight:800;font-size:1.05rem;letter-spacing:.3px}
+  .logo .owl{font-size:1.5rem}
+  .logo small{display:block;font-weight:600;font-size:.72rem;color:var(--yellow);letter-spacing:1.5px;text-transform:uppercase}
+  .lang-toggle{margin-left:auto;display:flex;border:2px solid var(--chalk-dim);border-radius:999px;overflow:hidden}
+  .lang-toggle button{
+    font:inherit;font-weight:700;font-size:.85rem;letter-spacing:1px;
+    padding:7px 18px;border:0;cursor:pointer;background:transparent;color:var(--chalk-dim);
+    transition:background .2s,color .2s;
+  }
+  .lang-toggle button[aria-pressed="true"]{background:var(--yellow);color:var(--ink)}
+  .lang-toggle button:hover:not([aria-pressed="true"]){color:var(--chalk);background:rgba(245,241,230,.08)}
+
+  main{max-width:var(--maxw);margin:0 auto;padding:44px 20px 80px;position:relative}
+  .hero{text-align:center;margin-bottom:36px}
+  .hero h1{
+    font-size:clamp(1.9rem,5vw,2.9rem);font-weight:900;letter-spacing:.5px;
+    color:var(--chalk);text-shadow:0 2px 0 rgba(0,0,0,.25);
+  }
+  .hero h1 .underline{display:block;width:180px;height:5px;margin:12px auto 0;border-radius:3px;
+    background:linear-gradient(90deg,var(--yellow),var(--orange),var(--lilac),var(--blue))}
+  .hero .app{margin-top:14px;font-size:1.05rem;color:var(--chalk-dim)}
+  .hero .date{display:inline-block;margin-top:10px;font-size:.82rem;font-weight:700;letter-spacing:1px;
+    color:var(--yellow);border:1.5px dashed rgba(255,213,79,.55);border-radius:999px;padding:4px 16px}
+
+  .summary{
+    background:var(--paper);color:var(--ink);border-radius:14px;
+    padding:24px 26px;margin:0 0 34px;position:relative;
+    box-shadow:0 10px 26px rgba(0,0,0,.35);
+    border-left:8px solid var(--blue);
+    transform:rotate(-.4deg);
+  }
+  .summary h2{font-size:1.15rem;font-weight:900;margin-bottom:8px;color:#1b382d}
+  .summary p{font-size:.98rem;line-height:1.7}
+  .summary .chips{display:flex;flex-wrap:wrap;gap:8px;margin-top:14px}
+  .summary .chip{font-size:.78rem;font-weight:800;letter-spacing:.4px;padding:5px 12px;border-radius:999px;color:#fff}
+  .chip.g{background:var(--grass)} .chip.b{background:var(--blue)} .chip.o{background:var(--orange)} .chip.l{background:var(--lilac)}
+
+  nav.sections{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:36px}
+  nav.sections a{
+    font-size:.8rem;font-weight:700;text-decoration:none;color:var(--chalk-dim);
+    border:1.5px solid rgba(207,224,212,.35);border-radius:999px;padding:5px 14px;
+    transition:all .2s;
+  }
+  nav.sections a:hover{color:var(--ink);background:var(--yellow);border-color:var(--yellow);transform:translateY(-1px)}
+
+  section.policy{margin-bottom:34px;scroll-margin-top:96px}
+  section.policy h2{
+    display:flex;align-items:center;gap:12px;
+    font-size:1.28rem;font-weight:900;color:var(--chalk);margin-bottom:12px;
+  }
+  section.policy h2 .num{
+    flex:0 0 auto;width:34px;height:34px;border-radius:50%;
+    display:inline-flex;align-items:center;justify-content:center;
+    font-size:.95rem;font-weight:900;color:var(--ink);background:var(--yellow);
+    box-shadow:0 3px 0 rgba(0,0,0,.3);
+  }
+  section.policy:nth-of-type(3n) h2 .num{background:var(--blue);color:#fff}
+  section.policy:nth-of-type(3n+1) h2 .num{background:var(--grass);color:#fff}
+  section.policy .body{
+    border-left:3px dashed rgba(207,224,212,.3);padding-left:22px;margin-left:16px;
+    color:var(--chalk-dim);font-size:.97rem;
+  }
+  section.policy .body p{margin-bottom:10px}
+  section.policy .body ul{margin:6px 0 12px 20px}
+  section.policy .body li{margin-bottom:7px}
+  section.policy .body strong{color:var(--chalk)}
+  section.policy .body a{color:var(--yellow)}
+  .host-list{display:flex;flex-wrap:wrap;gap:6px;margin:8px 0 12px;list-style:none!important;margin-left:0!important}
+  .host-list li{
+    font-family:Consolas,Menlo,monospace;font-size:.8rem;background:rgba(0,0,0,.28);
+    border:1px solid rgba(207,224,212,.25);border-radius:8px;padding:3px 10px;margin:0!important;
+  }
+  .contact-mail{
+    display:inline-block;font-weight:800;color:var(--ink);background:var(--yellow);
+    border-radius:8px;padding:4px 14px;box-shadow:0 3px 0 rgba(0,0,0,.3);
+    text-decoration:none;transition:transform .15s, box-shadow .15s;
+  }
+  .contact-mail:hover{transform:translateY(-2px);box-shadow:0 5px 0 rgba(0,0,0,.3)}
+  footer{border-top:3px solid var(--board-frame);padding:26px 20px 40px;text-align:center;color:var(--chalk-dim);font-size:.85rem}
+  footer .crayons{font-size:1.2rem;letter-spacing:6px;margin-bottom:8px}
+  footer a{color:var(--yellow);text-decoration:none}
+
+  [hidden]{display:none!important}
+
+  @media (max-width:560px){
+    .top-inner{padding:12px 14px}
+    main{padding:30px 16px 60px}
+    section.policy .body{padding-left:14px;margin-left:8px}
+    .summary{padding:18px}
+  }
+  @media print{
+    body{background:#fff;color:#000}
+    body::before,header.top,nav.sections{display:none}
+    .summary{box-shadow:none;transform:none;border:1px solid #999}
+    section.policy .body{color:#222;border-left-color:#999}
+    section.policy h2{color:#000}
+    section.policy .body strong{color:#000}
+    .hero h1{color:#000;text-shadow:none}
+    .hero .app,.hero .date{color:#333}
+    footer{color:#333;border-top-color:#999}
+  }
+</style>
+</head>
+<body>
+
+<header class="top">
+  <div class="top-inner">
+    <div class="logo">
+      <span class="owl">🦉</span>
+      <span>Benim Matematiğim<small>5. Sınıf · Şartlar</small></span>
+    </div>
+    <div class="lang-toggle" role="group" aria-label="Dil / Language">
+      <button id="btn-tr" aria-pressed="true" onclick="setLang('tr')">TR</button>
+      <button id="btn-en" aria-pressed="false" onclick="setLang('en')">EN</button>
+    </div>
+  </div>
+</header>
+
+<main>
+  <!-- ================= TÜRKÇE ================= -->
+  <div id="lang-tr">
+    <div class="hero">
+      <h1>Kullanım Şartları<span class="underline"></span></h1>
+      <p class="app">Benim Matematiğim 5. Sınıf · Android uygulaması · Abonelik koşulları</p>
+      <span class="date">Yürürlük tarihi: 10 Kasım 2026</span>
+    </div>
+
+    <div class="summary">
+      <h2>📌 Kısaca</h2>
+      <p>Uygulama <strong>kişisel ve ücretsiz</strong> başlar; <strong>PRO</strong> ise Google Play üzerinden alınan bir aboneliktir. Abonelik <strong>otomatik yenilenir</strong> ve dönem bitmeden en az <strong>24 saat önce</strong> iptal edilmezse bir dönem daha uzar. İptal ve iade <strong>Google Play</strong> üzerinden yürür; uygulamanın kendi ödeme sistemi yoktur. Hesap açılmaz, veri toplanmaz, reklam gösterilmez.</p>
+      <div class="chips">
+        <span class="chip g">Hesap gerekmez</span>
+        <span class="chip b">Ödeme Play'de</span>
+        <span class="chip o">24 saat önce iptal</span>
+        <span class="chip l">Reklam · izleme yok</span>
+      </div>
+    </div>
+
+    <nav class="sections" aria-label="Bölümler">
+      <a href="#tr-1">Kapsam</a>
+      <a href="#tr-2">Uygulama ne sunar</a>
+      <a href="#tr-3">Ücretsiz sürüm</a>
+      <a href="#tr-4">PRO aboneliği</a>
+      <a href="#tr-5">Fiyat ve yenileme</a>
+      <a href="#tr-6">İptal ve iade</a>
+      <a href="#tr-7">Ebeveyn onayı</a>
+      <a href="#tr-8">Hakkın doğrulanması</a>
+      <a href="#tr-9">Kabul edilebilir kullanım</a>
+      <a href="#tr-10">Sorumluluk</a>
+      <a href="#tr-11">Değişiklikler</a>
+      <a href="#tr-12">Hukuk ve iletişim</a>
+    </nav>
+
+    <section class="policy" id="tr-1">
+      <h2><span class="num">1</span>Kapsam ve kabul</h2>
+      <div class="body">
+        <p>Bu şartlar, <strong>Benim Matematiğim 5. Sınıf</strong> Android uygulamasını ve içindeki ücretli PRO aboneliğini kullanırken geçerli olan koşulları belirler. Uygulamayı indirip kullanarak bu şartları kabul etmiş olursunuz. Kabul etmiyorsanız uygulamayı kullanmayınız ve kaldırınız.</p>
+        <p>Uygulama bir <strong>tüketici uygulamasıdır</strong>. Bu belgedeki hiçbir madde, 6502 sayılı Tüketicinin Korunması Hakkında Kanun ve ilgili mevzuatla verilen <strong>zorunlu tüketici haklarını kaldırmaz veya daraltmaz</strong>; aksine bu şartlar okunurken o haklar saklıdır.</p>
+        <p>İşbu şartların ayrılmaz parçası olan <a href="./index.html">Gizlilik Politikası</a> sayfasını da okumanızı öneririz.</p>
+      </div>
+    </section>
+
+    <section class="policy" id="tr-2">
+      <h2><span class="num">2</span>Uygulamanın sunduğu</h2>
+      <div class="body">
+        <p>Uygulama, Türkiye <strong>MEB 5. sınıf matematik öğretim programına</strong> bağlı olarak hazırlanmış animasyonlu ders anlatımları, soru çözümleri, test setleri ve çalışma yaprakları sunar. Amaç, konu adım adım görselleştirilerek öğretmene ek bir çalışma imkânı vermektir.</p>
+        <ul>
+          <li>Uygulama <strong>öğretmenin, okulun veya sınıf çalışmalarının yerine geçmez</strong>; destekleyici bir öğrenme aracıdır.</li>
+          <li>İçerik özenle hazırlanmıştır, ancak <strong>tüzel kişiliğimiz bulunmayan bağımsız bir geliştirici</strong> tarafından geliştirilmektedir. Bir konuda uygulamanın gösterimi ile öğretmeninizin gösterimi farklıysa <strong>öğretmeninizin gösterimi esas alınmalıdır</strong>.</li>
+          <li>Uygulama çevrimdışı çalışır; ders ve soru içeriği cihazla birlikte gelir.</li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="policy" id="tr-3">
+      <h2><span class="num">3</span>Ücretsiz sürüm ve sınırları</h2>
+      <div class="body">
+        <p>Ücretsiz sürüm kayıt olmadan, ödeme yapmadan kullanılabilir. Şu anki ücretsiz kapsam (güncellemelerle değişebilir):</p>
+        <ul>
+          <li>Toplam <strong>120 dersten 2 ders</strong>, <strong>17 test setinden 1 set</strong>, <strong>199 çalışma yaprağından 28 yaprak</strong> erişime açıktır.</li>
+          <li>Bunlara ek olarak her gün yenilenen sınırlı haklar vardır: yapay zekâ destekli soru seti (yalnızca Kolay seviye), karışık soru seti ve deneme sınavı için günlük deneme hakları.</li>
+          <li>Ücretsiz sürümde <strong>reklam yoktur</strong>; içerik, ödeme yapılmadığı için kısıtlanır.</li>
+        </ul>
+        <p>Ücretsiz haklar cihazda tutulur ve günlük olarak yenilenir.</p>
+      </div>
+    </section>
+
+    <section class="policy" id="tr-4">
+      <h2><span class="num">4</span>PRO aboneliği: planlar ve sağladıkları</h2>
+      <div class="body">
+        <p>PRO, Google Play üzerinden satın alınan bir <strong>aboneliktir</strong>; tek seferlik satın alma yoktur. PRO ile tüm dersler, tüm test setleri, tüm çalışma yaprakları, konu seçimli yapay zekâ soru setleri ve sınırlama olmadan sınav/deneme özellikleri açılır. Satın alınan hak, cihazdaki <strong>Google Play hesabına</strong> bağlıdır; ikinci bir cihazda aynı Play hesabıyla "Geri yükle" kullanılabilir.</p>
+        <p>Play Console'da tanımlı ürünler:</p>
+        <ul class="host-list">
+          <li>pro_monthly — Aylık</li>
+          <li>pro_6_month — 6 Aylık</li>
+          <li>pro_yearly — Yıllık</li>
+        </ul>
+        <p>Her planın sağladığı içerik aynıdır; farklılık <strong>süre ve fiyatta</strong>dır. Güncel fiyat, uygulama içindeki plan kartlarında ve Google Play ödeme adımında, sizin bölgenizin para birimiyle gösterilir. Bu sayfada fiyat yazmıyoruz; fiyatlar Play tarafından dönemsel olarak güncellenebilir ve ödeme adımında gördüğünüz rakam esastır.</p>
+      </div>
+    </section>
+
+    <section class="policy" id="tr-5">
+      <h2><span class="num">5</span>Fiyatlandırma ve otomatik yenileme</h2>
+      <div class="body">
+        <p><strong>Abonelikler otomatik olarak yenilenir.</strong> Seçtiğiniz dönemin (1 ay / 6 ay / 12 ay) sonunda, aksi belirtilmediyse, aynı süre için aynı ücrete bir dönem daha eklenir.</p>
+        <ul>
+          <li>Yenileme bedeli, mevcut dönemin <strong>bitişinden önceki 24 saat içinde</strong> Google Play tarafından tahsil edilir.</li>
+          <li>Tahsilat başarılamazsa Google Play bir süre daha deneme yapabilir; bu durumda PRO erişimi, Play'in kendi dönemi sona erdiğinde kapanır.</li>
+          <li>Toplam ödeme tutarı ve bir sonraki tahsil tarihi, Google Play hesabınızdaki <strong>Ödemeler ve abonelikler</strong> ekranında görünür.</li>
+        </ul>
+        <p>Ödemeler <strong>Google Play</strong> aracılığıyla tahsil edilir. Uygulama kredi kartı, banka hesabı veya cüzdan bilgisi <strong>görmez ve saklamaz</strong>.</p>
+      </div>
+    </section>
+
+    <section class="policy" id="tr-6">
+      <h2><span class="num">6</span>İptal, plan değişikliği ve iade</h2>
+      <div class="body">
+        <p><strong>İptal:</strong> Aboneliğinizi istediğiniz zaman iptal edebilirsiniz. İptal, yenilemeyi durdurur; <strong>iptal anında o dönemin ücreti iade edilmez</strong> ve satın aldığınız süre sonuna kadar PRO erişiminiz devam eder. Kesinlikle ücretlendirilmemek için iptal, dönemin bitişinden <strong>en az 24 saat önce</strong> yapılmalıdır.</p>
+        <p>İptal yolu: <strong>Google Play Store → profil simgeniz → Ödemeler ve abonelikler → Abonelikler → Benim Matematiğim 5. Sınıf → İptal et.</strong> Uygulamanın içindeki "Planı değiştir" ekranından da aynı Play ekranına yönlendirme yapılır; geliştirici tarafında bir iptal butonu yoktur ve olmayacaktır.</p>
+        <p><strong>Plan değişikliği:</strong> Planlar arasında geçiş Google Play üzerinden yapılır. Yeni plan hemen etkin olur; eski planda kalan süre Play tarafından hesaplanıp yeni döneme eklenir veya buna göre ücretlendirilir. Kalan sürenin nasıl işlendiğine karar veren ve uygulayan <strong>Google Play'dir</strong>.</p>
+        <p><strong>İade:</strong> İade talepleri <strong>Google Play'in iade politikası</strong> çerçevesinde Google'a yapılır ve Google tarafından sonuçlandırılır. Uygulama, Play'den bağımsız iade işlemi yapamaz; Play iadeye karar verirse PRO erişimi o cihaz hesabında kapanır.</p>
+      </div>
+    </section>
+
+    <section class="policy" id="tr-7">
+      <h2><span class="num">7</span>Ebeveyn onayı ve yaş</h2>
+      <div class="body">
+        <p>Uygulamanın hedef kitlesi <strong>10–11 yaş (5. sınıf)</strong> öğrencileridir ve içerik buna göre kurgulanmıştır. Uygulama çocuklardan kişisel veri toplamaz; hesap açtırmaz.</p>
+        <p><strong>Satın alma, bir yetişkinin onayına bağlıdır.</strong> PRO planlarından birine dokunulduğunda uygulama, ödeme ekranına geçmeden önce bir büyüğün çözmesi gereken bir çarpma işlemi sorar. Bu kapı, çocuğun kendi kendine yanlışlıkla ödeme yapmasını engellemek içindir. Asıl ödeme kilidi <strong>Google Play'in kendi cihaz şifresi ve Aile (Family Link) onayıdır</strong>; çocuğunuzun cihazında ödeme yapılmasını kalıcı olarak kapatmak için Play'de "İşlem yapmadan önce kimlik doğrulaması iste" ayarını kullanmanızı öneririz.</p>
+        <p>13 yaşından küçük kullanıcılar uygulamayı <strong>yalnızca bir ebeveyn veya velinin gözetiminde</strong> kullanmalıdır; satın almalar münhasıran yetişkin sorumluluğundadır.</p>
+      </div>
+    </section>
+
+    <section class="policy" id="tr-8">
+      <h2><span class="num">8</span>Abonelik hakkının doğrulanması</h2>
+      <div class="body">
+        <p>PRO erişiminin tek yetkili kaynağı <strong>Google Play'dir</strong>. Uygulama açıldığında ve satın alma sonrasında Play'e sorularak aktif abonelik doğrulanır; cihazda yalnızca bu doğrulamanın kısa özetli bir kaydı tutulur.</p>
+        <ul>
+          <li>Aboneliğinizi Play'de iptal etseniz bile <strong>dönem sonuna kadar</strong> erişim sürer.</li>
+          <li>Cihazın Play'e ulaşamadığı kısa çevrimdışı dönemlerde, ödemeli bir kullanıcının tek bir bağlantı sorunu yüzünden içeriğinden olmaması için erişim bir süre daha tanınabilir. Bu bir lütuf değil, <strong>doğrulama toleransıdır</strong>; Play'e ulaşıldığında gerçek durum esas alınır.</li>
+          <li>Sistem saatini ileri alan kullanım, hakkı uzatmaz; doğrulama Play kayıtlarına döner.</li>
+          <li>Uygulama kaldırılıp yeniden kurulduğunda "Geri yükleme" ile aynı Play hesabındaki abonelik yeniden etkinleştirilir.</li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="policy" id="tr-9">
+      <h2><span class="num">9</span>Kabul edilebilir kullanım, lisans ve haklar</h2>
+      <div class="body">
+        <p>Size, uygulamanın <strong>kişisel, ticari olmayan, devredilemez ve münhasır olmayan</strong> bir kullanım lisansı verilir. Öğrenim ilerlemeniz ve takma adınız cihazınızdadır; uygulamayı bir sınıf veya kurum adına merkezi olarak kullanmak isterseniz bizimle iletişime geçin.</p>
+        <p>Aşağıdakiler kabul edilmez:</p>
+        <ul>
+          <li>İçeriği (ders, soru, çözüm, grafik) izinsiz kopyalayıp yayımlamak, satmak veya başka bir uygulamada kullanmak.</li>
+          <li>Abonelik doğrulamasını atlatmaya yönelik araçlar dağıtmak veya başkalarına PRO erişimi devretmek.</li>
+          <li>Uygulamayı yasa dışı amaçlarla veya başka kullanıcılara zarar verecek şekilde kullanmak.</li>
+        </ul>
+        <p>Uygulama içeriği ve tasarımı geliştiriciye aittir; MEB öğretim programı resmî bir kaynak olarak referans alınmıştır. Uygulamada kullanıcıların birbirine içerik gönderebileceği bir bölüm <strong>bulunmaz</strong>; bu nedenle kullanıcı içeriğine ilişkin bir sorumluluk üstlenmiyoruz.</p>
+      </div>
+    </section>
+
+    <section class="policy" id="tr-10">
+      <h2><span class="num">10</span>Sorumluluk sınırlaması ve hizmetin sürekliliği</h2>
+      <div class="body">
+        <p>Uygulama "oldığı gibi" sunulur. Eğitim içeriğinin doğruluğu için düzenli denetim ve otomatik testler uygulanmaktadır; buna rağmen tüm içerik için hatasızlık taahhüdü verilemez. <strong>Kanunun zorunlu kıldığı hâllerde</strong> (ör. ayıplı hizmet ve tüketici hakları) bizim sorumluluğumuz, o mevzuatın ve Google Play'in öngördüğü sınırlar kadardır; bu sınırların dışında, doğabilecek dolaylı zararlar için sorumluluk kabul edilmez.</p>
+        <p>Güvenlik, kalite veya mevzuat gerekçeleriyle uygulamanın bazı bölümleri güncellenebilir, değiştirilebilir veya erişime kapatılabilir. Aktif bir abonelik döneminde PRO erişimini tamamen kaldırmak zorunda kalırsak, kalan süre için <strong>iade talebinizi Google Play üzerinden</strong> iletebilir ve bu durumda erişim hakkınızı kaybetmezsiniz.</p>
+      </div>
+    </section>
+
+    <section class="policy" id="tr-11">
+      <h2><span class="num">11</span>Şartların değiştirilmesi</h2>
+      <div class="body">
+        <p>Şartları güncelleyebiliriz. Güncellenen metin <strong>bu sayfada</strong> yayımlanır ve en üstteki yürürlük tarihi değiştirilir; böylece değişiklik yürürlüğe girer. Önemli değişiklikler uygulama sürüm notlarında da belirtilir.</p>
+        <p>Aktif aboneliğinizin <strong>ücretini, yenileme koşullarını veya PRO'nun sağladığı temel erişimi</strong> kötüleştiren bir değişiklik yapılırsa, o döneme kadar mevcut koşullara uygunluk esas alınır ve Play üzerinden iptal hakkınız doğar.</p>
+      </div>
+    </section>
+
+    <section class="policy" id="tr-12">
+      <h2><span class="num">12</span>Uygulanabilir hukuk ve iletişim</h2>
+      <div class="body">
+        <p>Bu şartların yorumlanmasında <strong>Türkiye Cumhuriyeti hukuku</strong> uygulanır. Zorunlu tüketici hakları saklıdır; tüketici sıfatıyla uyuşmazlıklarda Tüketici Hakem Heyetleri ve Tüketici Mahkemeleri nezdindeki başvuru yollarınız kaldırılmaz.</p>
+        <p>Şartlar, abonelik, fatura, içerik veya erişimle ilgili sorularınız için:</p>
+        <p><a class="contact-mail" href="mailto:selimmemic73@gmail.com">✉️ selimmemic73@gmail.com</a></p>
+        <p>Geliştirici: Benim Matematiğim 5. Sınıf · Bağımsız geliştirici</p>
+      </div>
+    </section>
+  </div>
+
+  <!-- ================= ENGLISH ================= -->
+  <div id="lang-en" hidden>
+    <div class="hero">
+      <h1>Terms of Service<span class="underline"></span></h1>
+      <p class="app">Benim Matematiğim 5. Sınıf · Android app · Subscription terms</p>
+      <span class="date">Effective: 10 November 2026</span>
+    </div>
+
+    <div class="summary">
+      <h2>📌 In short</h2>
+      <p>The app starts <strong>free and without an account</strong>. <strong>PRO</strong> is a subscription bought through Google Play. Subscriptions <strong>auto-renew</strong> unless cancelled <strong>at least 24 hours</strong> before the end of the current period. Cancellation and refunds are handled by <strong>Google Play</strong>; the app has no payment system of its own. No personal data is collected and no ads are shown.</p>
+      <div class="chips">
+        <span class="chip g">No account needed</span>
+        <span class="chip b">Billing via Play</span>
+        <span class="chip o">Cancel 24h ahead</span>
+        <span class="chip l">No ads · no tracking</span>
+      </div>
+    </div>
+
+    <nav class="sections" aria-label="Sections">
+      <a href="#en-1">Scope</a>
+      <a href="#en-2">What the app offers</a>
+      <a href="#en-3">Free tier</a>
+      <a href="#en-4">PRO subscription</a>
+      <a href="#en-5">Price &amp; renewal</a>
+      <a href="#en-6">Cancel &amp; refund</a>
+      <a href="#en-7">Parental consent</a>
+      <a href="#en-8">Entitlement checks</a>
+      <a href="#en-9">Acceptable use</a>
+      <a href="#en-10">Liability</a>
+      <a href="#en-11">Changes</a>
+      <a href="#en-12">Law &amp; contact</a>
+    </nav>
+
+    <section class="policy" id="en-1">
+      <h2><span class="num">1</span>Scope and acceptance</h2>
+      <div class="body">
+        <p>These terms govern the use of the <strong>Benim Matematiğim 5. Sınıf</strong> Android app and its paid PRO subscription. By installing and using the app you accept them. If you do not accept them, please stop using the app and uninstall it.</p>
+        <p>The app is a <strong>consumer product</strong>. Nothing here removes or limits any <strong>mandatory consumer right</strong> under applicable law; all such rights are expressly reserved.</p>
+        <p>The <a href="./index.html">Privacy Policy</a> is an integral part of these terms.</p>
+      </div>
+    </section>
+
+    <section class="policy" id="en-2">
+      <h2><span class="num">2</span>What the app offers</h2>
+      <div class="body">
+        <p>The app provides animated lessons, worked solutions, test sets and worksheets built around the <strong>Turkish Ministry of National Education (MEB) grade 5 mathematics curriculum</strong>. Its purpose is to give students an additional, visual way to practise what is taught in class.</p>
+        <ul>
+          <li>The app does <strong>not replace a teacher, a school or classroom work</strong>; it is a supporting study tool.</li>
+          <li>Content is prepared and tested carefully, but it is developed by an <strong>independent developer without a legal entity</strong>. Where the app's notation differs from your teacher's, <strong>follow your teacher</strong>.</li>
+          <li>The app works offline; lessons and questions ship with the app.</li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="policy" id="en-3">
+      <h2><span class="num">3</span>Free tier and its limits</h2>
+      <div class="body">
+        <p>The free tier needs no registration and no payment. Current scope (may change with updates):</p>
+        <ul>
+          <li><strong>2 of 120 lessons</strong>, <strong>1 of 17 test sets</strong> and <strong>28 of 199 worksheets</strong> are open.</li>
+          <li>In addition, daily refreshed allowances exist for the AI question set (Easy level only), the mixed question set and the practice exam.</li>
+          <li>The free tier shows <strong>no ads</strong>; content is limited simply because nothing was paid.</li>
+        </ul>
+        <p>Free allowances are stored on the device and refresh daily.</p>
+      </div>
+    </section>
+
+    <section class="policy" id="en-4">
+      <h2><span class="num">4</span>PRO subscription: plans and what they unlock</h2>
+      <div class="body">
+        <p>PRO is a <strong>subscription</strong> purchased through Google Play; there is no one-time purchase. PRO unlocks all lessons, all test sets, all worksheets, topic-selectable AI question sets and unlimited exam/practice features. The entitlement is attached to the <strong>Google Play account on the device</strong>; on a second device, use "Restore" with the same Play account.</p>
+        <p>Products defined in Play Console:</p>
+        <ul class="host-list">
+          <li>pro_monthly — Monthly</li>
+          <li>pro_6_month — 6 months</li>
+          <li>pro_yearly — Yearly</li>
+        </ul>
+        <p>All plans unlock the same content; they differ in <strong>duration and price</strong>. Current prices are shown inside the app's plan cards and at the Google Play checkout step, in your local currency. We deliberately do not state prices on this page: Play may update pricing periodically and the figure at checkout prevails.</p>
+      </div>
+    </section>
+
+    <section class="policy" id="en-5">
+      <h2><span class="num">5</span>Pricing and automatic renewal</h2>
+      <div class="body">
+        <p><strong>Subscriptions renew automatically.</strong> At the end of the chosen period (1 month / 6 months / 12 months), unless cancelled, the same period is extended for the same price.</p>
+        <ul>
+          <li>Google Play charges the renewal fee <strong>within the 24 hours before</strong> the current period ends.</li>
+          <li>If the charge fails, Google Play may retry; PRO access ends when Play's own term expires.</li>
+          <li>The total charge and the next billing date are visible in your Google Play account under <strong>Payments &amp; subscriptions</strong>.</li>
+        </ul>
+        <p>Payments are collected <strong>through Google Play</strong>. The app never sees or stores card, bank or wallet details.</p>
+      </div>
+    </section>
+
+    <section class="policy" id="en-6">
+      <h2><span class="num">6</span>Cancellation, plan change and refunds</h2>
+      <div class="body">
+        <p><strong>Cancellation:</strong> you can cancel anytime. Cancelling stops renewal; <strong>the fee for the current period is not refunded when you cancel</strong> and PRO stays available until the end of the period you already paid for. To avoid being charged at all, cancel <strong>at least 24 hours</strong> before the period ends.</p>
+        <p>Path: <strong>Google Play Store → your profile icon → Payments &amp; subscriptions → Subscriptions → Benim Matematiğim 5. Sınıf → Cancel subscription.</strong> The in-app "Change plan" screen routes to the same Play screen; there is no developer-side cancel button and there will not be one.</p>
+        <p><strong>Plan change:</strong> switching plans happens in Google Play. The new plan starts immediately and Play calculates how the unused time of the previous plan is credited or charged. <strong>Google Play decides and applies</strong> that proration.</p>
+        <p><strong>Refunds:</strong> refund requests are made to Google under <strong>Google Play's refund policy</strong> and settled by Google. The app cannot issue refunds independently of Play; if Google refunds, PRO access for that account stops accordingly.</p>
+      </div>
+    </section>
+
+    <section class="policy" id="en-7">
+      <h2><span class="num">7</span>Parental consent and age</h2>
+      <div class="body">
+        <p>The target audience is <strong>10–11 year-old (grade 5)</strong> students and the content is designed for them. The app does not collect personal data from children and does not require an account.</p>
+        <p><strong>Purchases require an adult.</strong> Before any PRO plan is opened, the app asks a multiplication question that must be solved by a grown-up. This gate exists to stop a child from completing a payment by accident. The real payment lock is <strong>Google Play's own device authentication and Family Link approval</strong>; to permanently block purchases on a child's device, enable "Require authentication for purchases" in Google Play.</p>
+        <p>Users under 13 should use the app <strong>only under the supervision of a parent or guardian</strong>; all purchases are made under adult responsibility.</p>
+      </div>
+    </section>
+
+    <section class="policy" id="en-8">
+      <h2><span class="num">8</span>Verifying the subscription entitlement</h2>
+      <div class="body">
+        <p><strong>Google Play is the single source of truth</strong> for PRO access. The app asks Play at launch and after a purchase; only a short summary of that check is kept on the device.</p>
+        <ul>
+          <li>If you cancel in Play, access continues <strong>until the end of the paid period</strong>.</li>
+          <li>During short periods when the device cannot reach Play, access may be kept so that a paying user is not locked out by a single connection problem. This is a <strong>verification tolerance</strong>, not a promise; once Play is reachable, the real status prevails.</li>
+          <li>Setting the system clock forward does not extend the entitlement; verification returns to Play's records.</li>
+          <li>After reinstalling, "Restore purchases" reactivates the subscription from the same Play account.</li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="policy" id="en-9">
+      <h2><span class="num">9</span>Acceptable use, licence and rights</h2>
+      <div class="body">
+        <p>You receive a <strong>personal, non-commercial, non-transferable and non-exclusive</strong> licence to use the app. Your progress and nickname stay on your device. To deploy the app centrally for a school or institution, contact us.</p>
+        <p>The following is not permitted:</p>
+        <ul>
+          <li>Copying, publishing or selling lessons, questions, solutions or graphics, or reusing them in another app without permission.</li>
+          <li>Distributing tools that bypass subscription verification, or transferring PRO access to others.</li>
+          <li>Using the app for unlawful purposes or in a way that harms other users.</li>
+        </ul>
+        <p>The app content and design belong to the developer; the MEB curriculum is used as an official reference. The app <strong>has no feature that lets users send content to each other</strong>, so we assume no user-generated-content moderation duty.</p>
+      </div>
+    </section>
+
+    <section class="policy" id="en-10">
+      <h2><span class="num">10</span>Limitation of liability and continuity</h2>
+      <div class="body">
+        <p>The app is provided "as is". Educational content is reviewed and covered by automated tests, yet no flawless-content guarantee can be given. <strong>Where the law makes us liable</strong> (for example defective digital content and consumer rights), our liability is limited to what that law and Google Play provide for; beyond that we are not liable for indirect damages.</p>
+        <p>Parts of the app may be updated, changed or withdrawn for security, quality or legal reasons. If we have to withdraw PRO access entirely during an active subscription period, you may submit a <strong>refund request through Google Play</strong> and you do not lose the rights you already hold.</p>
+      </div>
+    </section>
+
+    <section class="policy" id="en-11">
+      <h2><span class="num">11</span>Changes to these terms</h2>
+      <div class="body">
+        <p>We may update these terms. The revised text takes effect when published <strong>on this page</strong> with a new effective date, and important changes are also noted in the app's release notes.</p>
+        <p>If a change worsens the <strong>price, renewal conditions or the core PRO access</strong> of your active subscription, the terms you accepted continue to apply for that period and your right to cancel through Play is preserved.</p>
+      </div>
+    </section>
+
+    <section class="policy" id="en-12">
+      <h2><span class="num">12</span>Governing law and contact</h2>
+      <div class="body">
+        <p><strong>The law of the Republic of Turkey</strong> governs the interpretation of these terms. Mandatory consumer rights are reserved and your access to Consumer Arbitration Committees and Consumer Courts is not waived.</p>
+        <p>For questions about these terms, subscriptions, billing, content or access:</p>
+        <p><a class="contact-mail" href="mailto:selimmemic73@gmail.com">✉️ selimmemic73@gmail.com</a></p>
+        <p>Developer: Benim Matematiğim 5. Sınıf · Independent developer</p>
+      </div>
+    </section>
+  </div>
+</main>
+
+<footer>
+  <div class="crayons">🖍️ 📐 ✏️ 📏 🖍️</div>
+  <span id="footer-tr">Benim Matematiğim 5. Sınıf — Küçük adımlar, büyük başarılara götürür. · <a href="./index.html">Gizlilik Politikası</a></span>
+  <span id="footer-en" hidden>Benim Matematiğim 5. Sınıf — Small steps lead to great achievements. · <a href="./index.html">Privacy Policy</a></span>
+</footer>
+
+<script>
+  function setLang(lang){
+    var tr = lang === 'tr';
+    document.getElementById('lang-tr').hidden = !tr;
+    document.getElementById('lang-en').hidden = tr;
+    document.getElementById('footer-tr').hidden = !tr;
+    document.getElementById('footer-en').hidden = tr;
+    document.getElementById('btn-tr').setAttribute('aria-pressed', String(tr));
+    document.getElementById('btn-en').setAttribute('aria-pressed', String(!tr));
+    document.documentElement.lang = lang;
+    document.title = tr
+      ? 'Kullanım Şartları — Benim Matematiğim 5. Sınıf'
+      : 'Terms of Service — Benim Matematiğim 5. Sınıf';
+    try { localStorage.setItem('pp-lang', lang); } catch(e){}
+  }
+  try {
+    var saved = localStorage.getItem('pp-lang');
+    if (saved === 'en') setLang('en');
+  } catch(e){}
+</script>
+</body>
+</html>
